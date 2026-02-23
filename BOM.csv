@@ -1,0 +1,4 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"SW8,SW7,SW5,SW9,SW1,SW3,SW6,SW4,SW2";"SW_Cherry_MX_1.00u_PCB";9;"SW_Push_45deg";;;
+2;"D5,D2,D3,D4,D7,D6,D1,D8,D9";"D_DO-35_SOD27_P7.62mm_Horizontal";9;"1N4148WT";;;
+3;"U2";"XIAO-RP2040-DIP";1;"XIAO-RP2040-DIP";;;
