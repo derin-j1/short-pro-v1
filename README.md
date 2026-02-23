@@ -1,6 +1,9 @@
 # short-pro-v1
 This compact 3×3 macropad is powered by the RP2040 and gives you nine fully programmable keys. Set up shortcuts, macros, or media controls to fit your workflow. Small, simple, and powerful, it’s the perfect desk companion for productivity, creativity, or gaming.
 
+![213](https://github.com/user-attachments/assets/06caae27-e7cf-4823-ba3f-9be4f5e4d437)
+
+
 <img width="1332" height="649" alt="Screenshot 2026-02-12 090631" src="https://github.com/user-attachments/assets/4781f541-ec4a-419f-82be-5991bd876a67" />
 
 
