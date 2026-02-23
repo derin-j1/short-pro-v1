@@ -1,0 +1,94 @@
+
+#include <Keyboard.h>
+
+// 9 key pins
+const int keyPins[9] = {
+  2, 3, 4,
+  5, 6, 7,
+  8, 9, 10
+};
+
+bool keyState[9];
+bool lastKeyState[9];
+
+void setup() {
+  for (int i = 0; i < 9; i++) {
+    pinMode(keyPins[i], INPUT_PULLUP);
+    keyState[i] = HIGH;
+    lastKeyState[i] = HIGH;
+  }
+
+  Keyboard.begin();
+}
+
+void loop() {
+  for (int i = 0; i < 9; i++) {
+    keyState[i] = digitalRead(keyPins[i]);
+
+    // Key pressed
+    if (lastKeyState[i] == HIGH && keyState[i] == LOW) {
+      sendMacro(i);
+      delay(150); // debounce
+    }
+
+    lastKeyState[i] = keyState[i];
+  }
+}
+
+void sendMacro(int key) {
+  switch (key) {
+
+    case 0: // Key 1
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('c');
+      Keyboard.releaseAll();
+      break;
+
+    case 1: // Key 2
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('v');
+      Keyboard.releaseAll();
+      break;
+
+    case 2: // Key 3
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('z');
+      Keyboard.releaseAll();
+      break;
+
+    case 3: // Key 4
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press('t');
+      Keyboard.releaseAll();
+      break;
+
+    case 4: // Key 5
+      Keyboard.println("Hello from MBOARD!");
+      break;
+
+    case 5: // Key 6
+      Keyboard.press(KEY_LEFT_ALT);
+      Keyboard.press(KEY_F4);
+      Keyboard.releaseAll();
+      break;
+
+    case 6: // Key 7
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press(KEY_ESC);
+      Keyboard.releaseAll();
+      break;
+
+    case 7: // Key 8
+      Keyboard.press(KEY_F5);
+      Keyboard.releaseAll();
+      break;
+
+    case 8: // Key 9
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('s');
+      Keyboard.releaseAll();
+      break;
+  }
+}
