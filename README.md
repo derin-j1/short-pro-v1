@@ -1,10 +1,7 @@
 2# short-pro-v1
 This compact 3×3 macropad is powered by the RP2040 and gives you nine fully programmable keys. Set up shortcuts, macros, or media controls to fit your workflow. Small, simple, and powerful, it’s the perfect desk companion for productivity, creativity, or gaming.
-
-
-<img width="492" height="360" alt="Screenshot 2026-02-23 124614" src="https://github.com/user-attachments/assets/97146688-56f8-46ff-8ba9-e9655![WhatsApp Image 2026-02-24 at 9 20 weqeqewqewq09 AM](https://github.com/user-attachments/assets/5657066c-0b85-4248-908b-c7238d740aef)
-1e828b4" />
-
+<img width="492" height="360" alt="Screenshot 2026-02-23 124614" src="https://github.com/user-attachments/assets/b6077f95-252a-4a3f-b299-107de954ef9d" />
+<img width="492" height="600" alt="Screenshot 2026-02-24 094000" src="https://github.com/user-attachments/assets/b6bbdd7d-4483-44d4-8eeb-7de35854957d" />
 <img width="1332" height="649" alt="Screenshot 2026-02-12 090631" src="https://github.com/user-attachments/assets/4781f541-ec4a-419f-82be-5991bd876a67" />
 <img width="944" height="538" alt="Screenshot 2026-02-22 215025" src="https://github.com/user-attachments/assets/586ffbf7-a997-4d80-b783-6b4e7cb21742" />
 <img width="1352" height="759" alt="Screenshot 2026-02-22 215011" src="https://github.com/user-attachments/assets/b52e4aac-995e-4b25-b17a-18882de9d8de" />
